@@ -1,0 +1,175 @@
+/* Section - Welcome e Visiting */
+
+.banner{
+    display: flex;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    padding-bottom: 2em;
+    justify-content: space-between;
+}
+
+.banner__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner__texto__titulo {
+    font-family: var(--fonte-principal);
+    font-size: 50px;
+    color: var(--cinza-escuro-1);
+    text-transform: uppercase;
+}
+
+.banner__texto__info {
+    font-size: 20px;
+    color: var(--verde-2);
+    text-transform: uppercase;
+    padding-bottom: 0.5em;
+    line-height: 110%;
+}
+
+.banner__texto__botao {
+    font-size: 22.4px;
+    text-decoration: none;
+    color: var(--verde-1);
+    text-transform: uppercase;
+}
+
+.banner__imagem {
+    align-items: right;
+}
+
+.banner__texto__botao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner__texto__botao-seta {
+    padding-right: 8%;
+}
+
+.banner__texto__destaque {
+    color: var(--verde-2);
+}
+
+/* Section - The Museum */
+
+.banner-2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    padding-bottom: 2em;
+    justify-content: space-between;
+}
+
+/* Section - Exhibition */
+
+.exhibition__lista {
+    padding-bottom: 2em;
+}
+
+.exhibition__lista__link{
+    font-family: var(--fonte-principal);
+    font-size: 22px;
+    text-decoration: none;
+    color: var(--cinza-escuro-1);
+    text-align: right;
+    padding-right: 1em;
+    text-transform: uppercase;
+}
+
+.exhibition__lista__item {
+    text-align: right;
+}
+
+.exhibition__lista-seta {
+    padding-left: 1em;
+}
+
+/* Section - News */
+
+.banner__texto__data {
+    color: var(--cinza-escuro-1);
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+.banner__texto__titulo-noticia {
+    color: var(--cinza-escuro-1);
+    font-size: 40px;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+
+.banner__texto__info-noticia {
+    color: var(--cinza-escuro-1);
+    font-size: 20px;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+
+.banner__texto__botao-noticia {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: var(--verde-1);
+    text-decoration: none;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+
+.banner__texto__botao-seta {
+    padding-left: 1em;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--verde-2);
+    padding: 6% 0 6% 0;
+}
+
+.contato__titulo {
+    font-size: 20px;
+    color: var(--cinza-escuro-1);
+    padding: 0 20% 5% 20%;
+    line-height: 110%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contato__email {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    height: 42px;
+    border-radius: 100px;
+    border: 2px solid var(--branco);
+    background-color: transparent;
+    background-image: url(../img/Seta\ para\ a\ direita\ email.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    padding-left: 8%;
+    width: 80%;
+    
+}
+
+.contato__email::placeholder{
+    color: var(--branco);
+    text-transform: uppercase;
+}
+
+.lista-menu__rodape__imagens {
+    display: flex;
+    flex-direction: column;
+}
+
+.lista-menu__rodape__imagens__imagem {
+    padding: 1em;
+}
+
+
+

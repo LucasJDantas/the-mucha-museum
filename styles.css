@@ -1,0 +1,28 @@
+@import url("styles/header.css");
+@import url("styles/banners.css");
+@import url("styles/footer.css");
+
+@font-face { 
+    font-family: Futura BdCn BT; 
+    src: url(./font/futura-bold-condensed-bt.ttf); 
+}
+
+
+
+:root {
+    --cor-de-fundo: #ffffff;
+    --branco: #ffffff;
+    --cinza-escuro-1: #404040;
+    --verde-1: #70C6B6;
+    --verde-2: #C2CD97;
+    --marrom-1: #8D5C5C;
+    --fonte-principal: "Futura BdCn BT";
+    --fonte-secundaria: "Roboto";
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}

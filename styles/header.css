@@ -1,0 +1,114 @@
+.cabeçalho__menu-hamburger {
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;    
+}
+
+.cabeçalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* Para o menu ocupar toda a width da viewport */
+    width: 100vw;
+    /* Para o menu ficar com o fundo transparente se usa rgba */
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 3px 8px rgba(173, 173, 173, 0.95);
+}
+
+.container__botao:checked~.lista-menu { 
+    display: block;
+}
+
+.container__botao {
+    display: none;
+}
+
+.lista-menu__link {
+    text-decoration: none;
+    color: var(--cinza-escuro-1);
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.lista-menu__link:hover {
+    color: var(--verde-2);
+}
+
+.lista-menu__item {
+    padding-top: 1em;
+}
+
+.lista-menu__botoes {
+    text-align: center;
+    padding: 12px;
+}
+
+.lista-menu__info {
+    text-align: center;
+}
+
+.lista-menu__info__bloco {
+    padding: 1em;
+}
+
+.lista-menu__titulo {
+    color: var(--verde-2);
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+.lista-menu__texto {
+    color: var(--cinza-escuro-1);
+    font-size: 30px;
+    padding-top: 8px;
+    text-transform: uppercase;
+}
+
+.lista-menu__icone {
+    padding: 1em;
+}
+
+.divider {
+    color: var(--verde-2);
+    opacity: 0.5;
+}
+
+.lista-menu__pesquisa {
+    font-family: var(--fonte-principal);
+    font-size: 28px;
+    height: 60px;
+    border-radius: 100px;
+    border: 2px solid var(--cinza-escuro-1);
+    background-image: url(../img/Seta\ para\ a\ direita\ pesquisa.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    padding-left: 8%;
+    width: 90%;
+}
+
+.lista-menu__pesquisa::placeholder {
+    color: var(--cinza-escuro-1);
+    text-transform: uppercase;
+}
+
