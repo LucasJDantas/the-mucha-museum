@@ -1,0 +1,124 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-xl);
+    padding: var(--padding-l) 0;
+
+    @media (max-width: 390px) {
+        padding: var(--padding-s) 0;
+    }
+}
+
+.welcome__bloco {
+    display: flex;
+}
+
+.welcome__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.welcome__texto h1 {
+    color: var(--cinza-escuro-1);
+    font-size: var(--font-size-xxl);
+    text-transform: uppercase;
+    line-height: var(--line-height-b);
+
+    @media (max-width: 1200px) {
+        font-size: var(--font-size-xlx);
+
+        @media (max-width: 768px) {
+            font-size: var(--font-size-xl);
+
+            @media (max-width: 390px) {
+                font-size: var(--font-size-xlxx);
+            }
+        }
+    }
+}
+
+.welcome__texto-bottom h3 {
+    font-size: var(--font-size-xl);
+    text-transform: uppercase;
+    color: var(--verde-2);
+    padding-bottom: var(--padding-b);
+
+    @media (max-width: 1200px) {
+        font-size: var(--font-size-l);
+        padding-bottom: var(--padding-s);
+
+        @media (max-width: 768px) {
+            font-size: var(--font-size-m);
+
+            @media (max-width: 390px) {
+                font-size: var(--font-size-s);
+            }
+        }
+    }
+}
+
+.welcome__texto-bottom a {
+    font-size: var(--font-size-m);
+    text-transform: uppercase;
+    color: var(--verde-1);
+    text-decoration: none;
+    align-items: center; 
+
+    @media (max-width: 768px) {
+        font-size: var(--font-size-s);
+
+        @media (max-width: 390px) {
+            font-size: var(--font-size-s);
+        }
+    }
+}
+
+.welcome__texto-bottom:last-child :hover {
+    color: var(--verde-2);
+}
+
+.welcome__texto-bottom img {
+    padding-left: var(--padding-s);
+
+    @media (max-width: 768px) {
+        width: 20px;
+    }
+}
+
+.welcome__bloco h2 {
+    font-size: var(--font-size-xxl);
+    color: var(--cinza-escuro-1);
+    text-transform: uppercase;
+    line-height: var(--line-height-b);
+
+    @media (max-width: 1200px) {
+        font-size: var(--font-size-xlx);
+    }
+
+    @media (max-width: 768px) {
+        font-size: var(--font-size-l);
+
+        @media (max-width: 390px) {
+            font-size: var(--font-size-xlxx);
+        }
+    }
+}
+
+.welcome__bloco span {
+    color: var(--verde-2);
+}
+
+.welcome__img {
+    @media (max-width: 390px) {
+        display: none;
+    }
+}
+
+.welcome__img__ajuste {
+    display: none;
+
+    @media (max-width: 390px) {
+        display: block;
+    }
+}

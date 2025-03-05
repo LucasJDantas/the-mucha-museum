@@ -1,0 +1,71 @@
+.museum {
+    display: flex;
+    padding: var(--padding-l) 0;
+
+    @media (max-width: 390px) {
+        flex-direction: column;
+    }
+}
+
+.museum__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.museum__texto h2 {
+    font-size: var(--font-size-xxl);
+    color: var(--cinza-escuro-1);
+    text-transform: uppercase;
+
+    @media (max-width: 1200px) {
+        font-size: var(--font-size-xlx);
+
+        @media (max-width: 768px) {
+            font-size: var(--font-size-xl);
+
+            @media (max-width: 390px) {
+                font-size: var(--font-size-xlxx);
+            }
+        }
+    }
+}
+
+.museum__texto h3 {
+    font-size: var(--font-size-xl);
+    text-transform: uppercase;
+    color: var(--verde-2);
+    line-height: var(--line-height-m);
+
+    @media (max-width: 1200px) {
+        font-size: var(--font-size-m);
+        line-height: var(--line-height-b);
+
+        @media (max-width: 768px) {
+            font-size: var(--font-size-s);
+        }
+    }
+}
+
+.museum img {
+    padding-left: var(--padding-l);
+    
+    @media (max-width: 390px) {
+        padding: var(--padding-s) 0 0 0;
+    }
+}
+
+.museum__img {
+    @media (max-width: 390px) {
+        display: none;
+    }
+}
+
+.museum__img__ajuste {
+    display: none;
+
+    @media (max-width: 390px) {
+        display: block;
+    }
+}
+
