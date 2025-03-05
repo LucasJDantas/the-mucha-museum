@@ -1,0 +1,102 @@
+Guia de como fazer o menu hamburger
+
+NO HTML
+1. Criar a classe cabeçalho dentro da tag header.
+2. Criar a clase cabeçalho__menu-hamburger com uma tag span.
+3. Abrir a imagem do logo que ficará também no cabeçalho com a tag img.
+
+<header class="cabeçalho">
+        <span class="cabeçalho__menu-hamburger"></span>
+        <img src="./img/Logo do museu.svg" alt="Logo do Mucha Museum">
+</header>
+
+NO CSS
+4. Criar a classe referente ao menu > cabeçalho__menu-hamburger
+5. Incluir os atributos width e height de acordo com o tamanho do ícone, a imagem do ícone com o comando background-image, e o display: inline-block.
+
+*display: inline não recebe valores de altura e largura / display: inline-block recebe, logo o escolhido para ajustar o tamanho do ícone é o segundo comando.
+
+*a cor de fundo do menu deve ser ajustada na classe cabeçalho do header.
+
+NO HTML
+5. Separar os elementos de acordo com sua posição em um div container.
+
+<header class="cabeçalho">
+        <div class="container">
+            <span class="cabeçalho__menu-hamburger"></span>
+        </div>
+        <div class="container">
+            <img src="./img/Logo do museu.svg" alt="Logo do Mucha Museum">
+        </div>
+</header>
+
+NO CSS
+6. Incluir na classe cabeçalho um display: flex e justificar os elementos com justify-content: space-between. Cada container dentro dessa classe será jogado para um canto. Para alinhá-los, usar um align-items: center.
+7. Caso os elementos não fiquem alinhados, ou se houver mais de dois elementos, pode-se ajustar o alinhamento pela classe container, transformando-a em flexbox e usando align-items: center.
+
+NO HTML
+8. Incluir mais uma classe container__imagem dentro dos elementos (logo e menu) para ajustar os elementos uniformemente.
+
+<header class="cabeçalho">
+        <div class="container">
+            <span class="cabeçalho__menu-hamburger container__imagem"></span>
+        </div>
+        <div class="container">
+            <img src="./img/Logo do museu.svg" class="container__imagem" alt="Logo do Mucha Museum">
+        </div>
+</header>
+
+NO CSS
+9. Abrir a classe que acabou de ser criada, container__imagem, para editar os dois elementos do cabeçalho. Ao incluir um padding, a imagem do ícone irá se repetir para preencher seu próprio espaço.
+10. Para corrigir a repetição, voltar na classe em que a imagem foi inserida, cabeçalho__menu-hamburger, e incluir o comando background-repeat: no-repeat para a imagem não se repetir. A imagem voltará ao normal porém ficara desalinhada. Para corrigir o alinhamento, incluir o comando background-position: center e o ícone voltará para o centro como antes.
+
+NO HTML
+10. Dentro da div container do ícone do menu, incluir um input do tipo checkbox (detecta e armazena o clique - menu aberto/menu fechado), atribuir um id e uma classe à ele.
+
+*inputs são campos de interação para o usuário / id é uma identificação de associação de uma ação (e também no JavaScript) / a classe será usada para customizar os elementos no CSS
+
+11. A tag label for utiliza o id para associar ao input. Ou seja, o que estiver dentro da label for será mostrado com a checkbox marcada.
+
+<header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabeçalho__menu-hamburger container__imagem"></span>
+            </label>
+        </div>
+        <div class="container">
+            <img src="./img/Logo do museu.svg" class="container__imagem" alt="Logo do Mucha Museum">
+        </div>
+</header>
+
+12. Criar agora a lista que será mostrada ao abrir o menu (checkbox clicada) logo após a tag label fechar.
+Começar pela declaração da lista com a tag ul e sua classe, depois incluir os itens individualmente com a tag li, indicando que é um item da lista, e a tag a com href="#" para indicar que é um botão clicável, seguido de seu nome e o fechamento das tags.
+
+<ul class="lista-menu">
+    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Home</a></li>
+    <demais itens da lista>
+</ul>
+
+NO CSS
+13. Selecionar a classe da lista inteira, lista-menu, e colocar um display: none para ela sumir.
+14. Para fazer ela aparecer conforme clicada no botão checkbox, selecionar a classe do input container__botao e ajustar para que a lista apareça quando clicada.
+
+.container__botao:checked~.lista-menu { display: block; }
+
+*ao incluir :checked ao final da classe do input, sinalizamos que o quê vier à seguir, ~.lista-menu, é o que será executado quando ele for clicado.
+    checked é uma pseudo classe referente ao input. ~ é um combinador, ou seja, ele combina o resultado da  classe + pseudo classe e, se for verdadeiro (se o container__botao estiver com checked, mostrar a lista-menu), executa o comando seguinte, que nesse caso é mostrar o conteúdo de .lista-menu.
+
+15. O conteúdo do menu está sendo mostrado dentro do cabeçalho. Para ajustar, incluir dentro do cabeçalho o comando position: relative e dentro do lista-menu o comando position: absolute. Para o position:absolute funcionar, o outro elemento não pode estar com position:static.
+
+Position: relative torna o elemento editável, podendo incluir agora os atributos de top e bottom, right e left. O espaço que ele ocupava antes continua presente na página. É como se tivessem três quadrados na tela - se o quadrado do meio tiver position:relative e você alterar sua posição com algum atributo, ele se moverá mas sua posição inicial é preservada. 
+
+Position: absolute permite que o elemento seja ajustado de acordo com o elemento pai. O espaço que ele ocupava na tela some. É como se tivessem três quadrados na tela - se o quadrado do meio tiver position:absolute e você alterar sua posição com algum atributo, ele se moverá e sua posição inicial é irá sumir, deixando os dois quadrados restantes alinhados e o absolute de acordo com o atributo inserido.
+
+Position: static é o atributo padrão de qualquer elemento, fazendo com que ele seja alinhado sempre à esquerda e ao topo. Esse atributo precisa ser removido/alterado (para absolute) para o relative funcionar.
+
+16. Veja cada elemento do cabeçalho como um bloco: o ícone do menu e logotipo. Ao incluir o atributo position: relative, cada um desses blocos ocupará um espaço inicial e, se alterados, preservarão esse mesmo espaço. O menu, quando clicado, ganha um bloco dentro desse espaço. Ao atribuir um position:absolute à ele, ele vai desconsiderar esse espaço inicial e se alinhará em sua forma padrão, alinhado à esquerda e ao topo do seu elemento pai. Dessa forma, com os atributos de posicionamento agora disponíveis, podemos ajustar sua posição em relação ao seu elemento pai, o cabeçalho, com o atributo top: 100%, fazendo com que ele desloque o seu topo 100% do tamanho do pai.
+
+Agora os elementos da lista podem ser ajustados de acordo com o protótipo do Figma.
+
+NO CSS
+17. Para tirar a visibilidade do input checkbox, selecionar a classe do input e aplicar display: none. O checkbox irá sumir mas sua funcionalidade continuará.
