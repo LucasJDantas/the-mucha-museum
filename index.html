@@ -4,173 +4,311 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Mucha Museum</title>
-    <link rel="stylesheet" href="reset.css">
+    <link href=" https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css " rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="cabeçalho">
-        <div class="container">
-            <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
-                <span class="cabeçalho__menu-hamburger container__imagem"></span>
-            </label>
-            <ul class="lista-menu">              
-                <span class="lista-menu__botoes">
-                    <li class="lista-menu__item"><input type="search" class="lista-menu__pesquisa" placeholder="Search"></li>
-                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Home</a></li>
-                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Visit</a></li>
-                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Mucha's Life</a></li>
-                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Browse artwork</a></li>
-                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Donate</a></li>
-                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Mucha Foundation</a></li>
-                    <li class="lista-menu__item"><a href="#" class="lista-menu__link">Shop</a></li>
-                </span>
-                <hr class="divider">
-                <div class="lista-menu__info">
-                    <div class="lista-menu__info__bloco"> 
-                        <h2 class="lista-menu__titulo">Hours & Info</h2>
-                        <p class="lista-menu__texto">Open daily</p>
-                        <p class="lista-menu__texto">10:00am - 6:00pm</p>
-                    </div>
-                    <div class="lista-menu__info__bloco">
-                        <h2 class="lista-menu__titulo">Entrance</h2>
-                        <p class="lista-menu__texto">Kaunický palác<br>Panská 7<br>110 00 Prague 1</p>
-                    </div>
-                    <div class="lista-menu__info__bloco">
-                        <h2 class="lista-menu__titulo">Follow us</h2>
-                        <a href="#"><img src="./img/Instagram.svg" class="lista-menu__icone" alt="Ícone da rede social Twitter"></a>
-                        <a href="#"><img src="./img/Twitter.svg" class="lista-menu__icone" alt="Ícone da rede social Instagram"></a>
-                    </div>    
-                </div>
-                
-            </ul>    
-        </div>
-        <div class="container">
-            <img src="./img/Logo do museu.svg" class="container__imagem" alt="Logo do Mucha Museum">
-        </div>
-    </header>
-
-
-    <main>
-        <!--Banner - Welcome-->
-        <section class="banner">
-            <div class="banner__texto">
-                <h2 class="banner__texto__titulo">Welcome to the Mucha Museum</h2>
-                <div class="banner__texto__bloco-inferior">
-                    <p class="banner__texto__info">Open daily</p>
-                    <a href="#" class="banner__texto__botao">Plan your visit<img src="./img/Seta para a direita.svg" class="banner__texto__botao-seta"></a>
-                </div>
-            </div>
-            <div class="banner__imagem">
-                <img src="./img/Pôster.svg" class="banner__imagem-imagem">
-            </div> 
-        </section>
-        <!--Banner - Crença do Mucha-->
-        <section class="banner">
-            <div class="banner__texto">
-                <h2 class="banner__texto__titulo">MUCHA BELIEVED PASSIONATELY THAT ART WAS AN <b class="banner__texto__destaque">ESSENTIAL BENEFIT TO HUMANITY</b> AND THAT IT SHOULD BE SEEN AND ENJOYED BY AS MANY PEOPLE AS POSSIBLE.</h2>
-            </div>
-        </section>
-        <!--Banner - Visiting-->
-        <section class="banner">
-            <div class="banner__texto">
-                <h2 class="banner__texto__titulo">Visiting</h2>
-                <div class="banner__texto__bloco-inferior">
-                    <p class="banner__texto__info">Kaunický palác<br>Panská 7<br>110 00 Prague 1</p>
-                    <a href="#" class="banner__texto__botao">Get directions<img src="./img/Seta para a direita.svg" class="banner__texto__botao-seta"></a>
-                </div>
-            </div> 
-            <div class="banner__imagem">
-                <img src="./img/Prédio.svg" class="banner__imagem-imagem">
-            </div>            
-        </section>
-        <!--Banner - Exhibition-->
-        <section class="banner-2">
-            <div class="banner__texto">
-                <h2 class="banner__texto__titulo">The<br>museum</h2>
-                <p class="banner__texto__info">the only museum in the world dedicated to the life and work of the world-acclaimed Czech ART NOUVEAU artist Alphonse Mucha (1860 - 1939) was opened in Prague to the general public on 13 February 1998.<br>The area of 500 m2 of Mucha Museum also includes the Museum Shop, which offers an exclusive selection of gifts & posters with Alphonse Mucha motifs.</p>
-            </div>
-            <img src="./img/Interior.svg" class="banner__imagem__horizontal">
-        </section>
-        <section class="banner-2">
-            <div class="banner__texto">
-                <h2 class="banner__texto__titulo">Exhibition</h2>
-                <p class="banner__texto__info">THE MUSEUM IS DIVIDED INTO SEVEN SECTIONS EXHIBITION</p>
-            </div>
-            <ul class="exhibition__lista">
-                <li class="exhibition__lista__item"><a href="#" class="exhibition__lista__link">Decorative panels<img src="./img/Seta para a direita exhibition.svg" class="exhibition__lista-seta"></a></li>
-                <hr class="divider">
-                <li class="exhibition__lista__item"><a href="#" class="exhibition__lista__link">Parisian posters<img src="./img/Seta para a direita exhibition.svg" class="exhibition__lista-seta"></a></li>
-                <hr class="divider">
-                <li class="exhibition__lista__item"><a href="#" class="exhibition__lista__link">Documents décoratifs<img src="./img/Seta para a direita exhibition.svg" class="exhibition__lista-seta"></a></li>
-                <hr class="divider">
-                <li class="exhibition__lista__item"><a href="#" class="exhibition__lista__link">Czech posters<img src="./img/Seta para a direita exhibition.svg" class="exhibition__lista-seta"></a></li>
-                <hr class="divider">
-                <li class="exhibition__lista__item"><a href="#" class="exhibition__lista__link">Paintings<img src="./img/Seta para a direita exhibition.svg" class="exhibition__lista-seta"></a></li>
-                <hr class="divider">
-                <li class="exhibition__lista__item"><a href="#" class="exhibition__lista__link">Drawings and pastels<img src="./img/Seta para a direita exhibition.svg" class="exhibition__lista-seta"></a></li>
-                <hr class="divider">
-                <li class="exhibition__lista__item"><a href="#" class="exhibition__lista__link">Studio and photographs<img src="./img/Seta para a direita exhibition.svg" class="exhibition__lista-seta"></a></li>
+    <header class="header">
+        <nav class="header__navegacao container">
+            <ul class="header__list">
+                <li class="header__list__item">
+                    <div class="container-menu">
+                        <input type="checkbox" id="menu" class="container-menu__botao">
+                        <label for="menu">
+                            <span class="header__menu-hamburger"></span>
+                        </label>
+                        <div class="header__list__menu">
+                            <div class="menu__input">
+                                <input type="search" id="search" placeholder="Search">
+                            </div>
+                            <div class="menu__listas">
+                                <ul class="menu__lists-lista">
+                                    <li class="menu__lists-lista-item">
+                                        <h3><a href="#">Home</a></h3>
+                                    </li>
+                                    <li class="menu__lists-lista-item">
+                                        <h3><a href="#">Mucha's Life</a></h3>
+                                    </li>
+                                    <li class="menu__lists-lista-item">
+                                        <h3><a href="#">Browse artwork</a></h3>
+                                    </li>
+                                    <li class="menu__lists-lista-item">
+                                        <h3><a href="#">Donate</a></h3>
+                                    </li>
+                                    <li class="menu__lists-lista-item">
+                                        <h3><a href="#">Mucha Foundation</a></h3>
+                                    </li>
+                                    <li class="menu__lists-lista-item">
+                                        <h3><a href="#">Shop</a></h3>
+                                    </li>
+                                </ul>
+                                <ul class="menu__lists-lista">
+                                    <li class="menu__lists-lista-item">
+                                        <h4>Visit</h4>
+                                    </li>
+                                    <li class="menu__lists-lista-item">
+                                        <h2><a href="#">Location</a></h2>
+                                    </li>
+                                    <li class="menu__lists-lista-item">
+                                        <h2><a href="#">Map</a></h2>
+                                    </li>
+                                    <li class="menu__lists-lista-item">
+                                        <h2><a href="#">Exhibition</a></h2>
+                                    </li>
+                                    <li class="menu__lists-lista-item">
+                                        <h2><a href="#">Buy tickets</a></h2>
+                                    </li>
+                                    <li class="menu__lists-lista-item">
+                                        <h2><a href="#">FAQ</a></h2>
+                                    </li>
+                                </ul>
+                                <ul class="menu__lists-lista">
+                                    <li class="menu__lists-lista-item">
+                                        <h4>Hours & Info</h4>
+                                        <p>Open daily</br>10:00AM - 6:00PM</p>
+                                    </li>
+                                    <li class="menu__lists-lista-item">
+                                        <h4>Entrance</h4>
+                                        <p>Kaunický palác</br>Panská 7</br>110 00 Prague 1</p>
+                                    </li>
+                                    <li class="menu__lists-lista-item">
+                                        <h4>Follow us</h4>
+                                        <a href="#"><img src="./img/icon-instagram.svg"></a>
+                                        <a href="#"><img src="./img/icon-twitter.svg"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__menu-rodape">
+                                <div class="header__menu-rodape-bloco">
+                                    <img src="./img/logo-museum-branco.svg" alt="Logo do Mucha Museum"/>
+                                    <img src="./img/logo-mucha-branco.svg" alt="Logo da Mucha Foundation">
+                                </div>
+                                <div class="header__menu-rodape-bloco">
+                                    <p><a href="mailto:office@mucha.cz">office@mucha.cz</a></p>
+                                    <p><a href="tel:+420 224 216 415">+420 224 216 415</a></p>
+                                    <p>IČ: 25121456</br>DIČ: CZ25121456</p>
+                                </div>
+                                <div class="header__menu-rodape-bloco">
+                                    <p class="header__menu-rodape-bloco-assinatura"><span>Website developed by</span> @lucasjdantas</p>
+                                </div>
+                            </div>
+                        </div>
+                </li>
+                <li class="header__list__item">
+                    <a href="#" class="header__list__item__botao-texto">Visit</a>
+                </li>
+                <li class="header__list__item">
+                    <a href="#" class="header__list__item__botao-logo"><img src="./img/logo-mucha-preto.svg"/></a>
+                </li>
+                <li class="header__list__item">
+                    <a href="#" class="header__list__item__botao-texto">Donate</a>
+                </li>
+                <li class="header__list__item">
+                    <a href="#" class="header__list__item__botao-texto">En | Cz</a>
+                </li>
             </ul>
-        </section>
-
-        <!--Banner - News-->
-        <section class="noticias">
-            <!--Notícia 1-->
-            <div class="banner-2">
-                <h2 class="banner__texto__titulo">News</h2>
-                <img src="./img/Notícia 1.svg" class="banner__imagem__horizontal">
-                <div class="banner__texto">
-                    <p class="banner__texto__data">Wednesday, April 19 2023</p>
-                    <h2 class="banner__texto__titulo-noticia">MUCHA IMMERSIVE EXPERIENCE</h2>
-                    <p class="banner__texto__info-noticia">We are thrilled to share this brilliant film made by the partners of our latest exhibition…</p>
-                    <a href="#" class="banner__texto__botao-noticia">Read more<img src="./img/Seta para a direita.svg" class="banner__texto__botao-seta"></a>
+        </nav>
+    </header>
+    
+    <section class="welcome container">
+        <div class="welcome__bloco">
+            <div class="welcome__texto">
+                <h1>Welcome to the Mucha Museum</h1>
+                <div class="welcome__texto-bottom">
+                    <h3>Open daily</h3>
+                    <a href="#">Plan your visit<img src="./img/icon-arrow-right-desktop.svg"/></a>
                 </div>
             </div>
-            <!--Notícia 2-->
-            <div class="banner-2">
-                <img src="./img/Notícia 2.svg" class="banner__imagem__horizontal">
-                <div class="banner__texto">
-                    <p class="banner__texto__data">Wednesday, March 15 2023</p>
-                    <h2 class="banner__texto__titulo-noticia">capturing spring</h2>
-                    <p class="banner__texto__info-noticia">“Divine nature speaks to our soul... she awakens in our hearts joy and happiness by...</p>
-                    <a href="#" class="banner__texto__botao-noticia">Read more<img src="./img/Seta para a direita.svg" class="banner__texto__botao-seta"></a>
-                </div>
-            </div> 
-            <!--Notícia 3-->
-            <div class="banner-2">
-                <img src="./img/Notícia 3.svg" class="banner__imagem__horizontal">
-                <div class="banner__texto">
-                    <p class="banner__texto__data">Saturday, October 1 2021</p>
-                    <h2 class="banner__texto__titulo-noticia">new trail planned across moravia</h2>
-                    <p class="banner__texto__info-noticia">on the 10th september, john mucha, president of the mucha foundation, signed a historic partnership...</p>
-                    <a href="#" class="banner__texto__botao-noticia">Read more<img src="./img/Seta para a direita.svg" class="banner__texto__botao-seta"></a>
-                </div>
-            </div>    
-        </section>
+            <img 
+                src="./img/welcome-desktop.svg" 
+                srcset="
+                ./img/welcome-tablet.svg 662w, 
+                ./img/welcome-tablet-2.svg 544w, 
+                ./img/welcome-desktop.svg 970w"
+                sizes="(max-width: 768px) 544px, (max-width: 1200px) 662px, 970px"
+                class="welcome__img"
+                alt="Pôster Gizmonda do Alphonse Mucha"
+            />
+            <img src="./img/welcome-mobile.svg" class="welcome__img__ajuste" alt="Pôster Gizmonda do Alphonse Mucha">
 
-        <section class="contato">
-            <h2 class="contato__titulo">Be the first to hear of any events and exhibitions</h2>
-            <input type="email" class="contato__email" placeholder="Enter your e-mail">
-        </section>
+        </div>
+        <div class="welcome__bloco">
+            <h2>Mucha believed passionately that art was an <span>essential benefit to humanity</span> and that it should be seen and enjoyed by as many people as possible.</h2>
+        </div>
+    </section>
 
-    </main>
-    <footer>
-        <div class="lista-menu__rodape">
-            <div class="lista-menu__rodape__bloco"> 
-                <div class="lista-menu__rodape__imagens">
-                    <img src="./img/Logo da Foundation.svg" class="lista-menu__rodape__imagens__imagem" alt="Logotipo do Mucha Foundation">
-                    <img src="./img/Logo do museu branco.svg" class="lista-menu__rodape__imagens__imagem" alt="Logotipo do Mucha Museum">
-                </div>
-                <h2 class="lista-menu__texto-titulo">Contact us</h2>
-                <p class="lista-menu__texto-corrido-endereço">office@mucha.cz<br>+420 224 216 415<br>IČ: 25121456<br>DIČ: CZ25121456</h2>
-                <p class="lista-menu__texto-corrido">2025 The Mucha Foundation</p>
-                <p class="lista-menu__texto-corrido"><b class="banner__texto__destaque">Website layout and prototype developed by</b> @lucasjdantas</p>
+    <section class="visiting container">
+        <img src="./img/visit-desktop.svg" 
+            srcset="
+            ./img/visit-desktop.svg 970w,
+            ./img/visit-tablet.svg 630w, 
+            ./img/visit-tablet-2.svg 490w"
+            sizes="(max-width: 768px) 544px, (max-width: 1200px) 630px, 970px"
+            class="visit__img"
+            alt="Imagem da fachada do Mucha Museum"
+        />
+        <img src="./img/visit-mobile.svg" class="visit__img__ajuste" alt="Imagem da fachada do Mucha Museum">
+        <div class="visiting__texto">
+            <h2>Visiting</h2>
+            <div class="visiting__texto-bottom">
+                <h3>Kaunický palác</br>Panská 7</br>110 00 Prague 1</h3>
+                <a href="#">Get directions<img src="./img/icon-arrow-right-desktop.svg"></a>
             </div>
         </div>
-    </footer>
+    </section>
+
+    <section class="museum container">
+        <div class="museum__texto">
+            <h2>The</br>Museum</h2>
+            <h3>The only museum in the world dedicated to the life and work of the world-acclaimed Czech ART NOUVEAU artist Alphonse Mucha (1860 - 1939) was opened in Prague to the general public on 13 February 1998.
+                The area of 500 m2 of Mucha Museum also includes the Museum Shop, which offers an exclusive selection of gifts & posters with Alphonse Mucha motifs.</h3>
+        </div>
+        <img src="./img/museum-desktop.svg"
+            srcset="
+            ./img/museum-desktop.svg 630w,
+            ./img/museum-tablet.svg 486w,
+            ./img/museum-tablet-2.svg 396w
+            " 
+            sizes="(max-width: 768px) 396px, (max-width: 1200px) 486px, 630px"
+            class="museum__img"
+            alt="Imagem do interior do museu com algumas obras à mostra"/>
+        <img src="./img/museum-mobile.svg" class="museum__img__ajuste" alt="Imagem do interior do museu com algumas obras à mostra">
+    </section>
     
+    <section class="exhibition container">
+        <h2>Exhibition</h2>
+        <h3>The museum is divided into seven sections exhibiting</h3>
+        <ul class="ex__list">
+            <li class="ex__list-item">
+                <a href="#">Decorative panels<img src="./img/icon-arrow-right-desktop.svg"/></a> 
+            </li>
+            <li class="ex__list-item">
+                <a href="#">Parisian posters<img src="./img/icon-arrow-right-desktop.svg"/></a> 
+            </li>
+            <li class="ex__list-item">
+                <a href="#">Documents décoratifs<img src="./img/icon-arrow-right-desktop.svg"/></a> 
+            </li>
+            <li class="ex__list-item">
+                <a href="#">Czech Posters<img src="./img/icon-arrow-right-desktop.svg"/></a> 
+            </li>
+            <li class="ex__list-item">
+                <a href="#">Drawings and pastels<img src="./img/icon-arrow-right-desktop.svg"/></a> 
+            </li>
+            <li class="ex__list-item">
+                <a href="#">Paintings<img src="./img/icon-arrow-right-desktop.svg"/></a> 
+            </li>
+            <li class="ex__list-item">
+                <a href="#">Studio and photographs<img src="./img/icon-arrow-right-desktop.svg"/></a> 
+            </li>
+        </ul>
+    </section>
+
+    <section class="news container">
+        <h2>News</h2>
+        <ul class="news__list">
+            <li class="news__list-item">
+                <img src="./img/news-1-desktop.svg" 
+                srcset="./img/news-1-mobile.svg 370w, .img/news-1-desktop.svg 304w"
+                sizes="(max-width: 390px) 370px, 304px"
+                alt="Imagem da Mucha Immersive Experience de 2023">
+                <h4>Wednesday, April 19 2023</h4>
+                <h3>Mucha Immersive Experience</h3>
+                <p>We are thrilled to share this brilliant film made by the partners of our latest exhibition…</p>
+                <a href="#">Read more<img src="./img/icon-arrow-right-desktop.svg"></a>
+            </li>
+            <li class="news__list-item">
+                <img src="./img/news-2-desktop.svg" 
+                srcset="./img/news-2-mobile.svg 370w, .img/news-2-desktop.svg 304w"
+                sizes="(max-width: 390px) 370px, 304px"
+                alt="Imagem da obra Spring de Alphonse Mucha">
+                <h4>Wednesday, March 15 2023</h4>
+                <h3>Capturing Spring</h3>
+                <p>“Divine nature speaks to our soul... she awakens in our hearts joy and happiness by...</p>
+                <a href="#">Read more<img src="./img/icon-arrow-right-desktop.svg"></a>
+            </li>
+            <li class="news__list-item">
+                <img src="./img/news-3-desktop.svg"
+                srcset="./img/news-3-mobile.svg 370w, .img/news-3-desktop.svg 304w"
+                sizes="(max-width: 390px) 370px, 304px"
+                alt="Imagem de John Mucha assinando nova parceria">
+                <h4>Saturday, October 1 2021</h4>
+                <h3>New trail planned across Moravia</h3>
+                <p>On the 10th September, John Mucha, president of the Mucha Foundation, signed a historic partnership...</p>
+                <a href="#">Read more<img src="./img/icon-arrow-right-desktop.svg"></a>
+            </li>
+            <li class="news__list-item">
+                <img src="./img/news-4-desktop.svg"
+                srcset="./img/news-4-mobile.svg 370w, .img/news-4-desktop.svg 304w"
+                sizes="(max-width: 390px) 370px, 304px"
+                alt="Pôster de divulgação do documentário">
+                <h4>Saturday, October 1 2021</h4>
+                <h3>An artist who created a style</h3>
+                <p>This exciting new feature documentary, directed by roman vavra and produced by...</p>
+                <a href="#">Read more<img src="./img/icon-arrow-right-desktop.svg"></a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Be the first to hear of any events and exhibitions</h2>
+            <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+    </section>
+
+    <footer class="footer">
+        <nav class="footer__nav container">
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <img src="./img/logo-mucha-branco.svg" alt="Logo da Mucha Foundation">
+                </li>
+                <li class="footer__list-item">
+                    <img src="./img/logo-museum-branco.svg" alt="Logo do Mucha Museum">
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <h3>Hours & Info</h3>
+                    <p>Open daily</br>10:00AM - 6:00PM</p>
+                </li>
+                <li class="footer__list-item">
+                    <h3>Entrance</h3>
+                    <p>Kaunický palác</br>Panská 7</br>110 00 Prague 1</p>
+                </li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <h3>Contact us</h3>
+                    <p><a href="mailto:office@mucha.cz">office@mucha.cz</a></p>
+                    <p><a href="tel:+420 224 216 415">+420 224 216 415</a></p>
+                    <p>IČ: 25121456</br>DIČ: CZ25121456</p>
+                </li>
+                <li class="footer__list-item">
+                    <h3>Follow us</h3>
+                    <a href="#"><img src="./img/icon-instagram.svg"></a>
+                    <a href="#"><img src="./img/icon-twitter.svg"></a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#">Donate</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="#" class="footer__botao-texto">Shop</a>
+                </li>
+            </ul>
+            <div class="footer__info">
+                <p><span>The Mucha Foundation</span> is an independent, non-profit making charity devoted to preserving and conserving the Mucha Trust Collection and promoting the work of Alphonse Mucha</p>
+                <p><span>Website developed by</span> @lucasjdantas</p>
+            </div> 
+            <div class="footer__assinatura">
+                <p>Website developed by</br>
+                <span>@lucasjdantas</spann></p>
+            </div>   
+
+        </nav>
+    </footer>
+
 </body>
 </html>
