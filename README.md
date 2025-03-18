@@ -1,6 +1,6 @@
 # The Mucha Museum
 
-![Montagens com o website do Mucha Museum em uso](https://github.com/user-attachments/assets/5aafb8d7-4a72-422b-96bb-db194410fb55)
+![Montagens com o website do Mucha Museum em uso](https://github.com/user-attachments/assets/48e93428-b04a-4771-af15-e9d806aeb677)
 
 ## ✨ O projeto
 
